@@ -1,0 +1,964 @@
+
+/******************************************************************************/ 
+/*basic styles from boilerplate, no id/classes*/
+/***********************************************************************************/ 
+
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+* {
+  box-sizing: border-box;
+  vertical-align: top;
+  transition: opacity 300ms;
+  text-rendering: optimizeLegibility;
+  transition: 300ms;
+  line-height: 1.618;
+}
+
+body {
+  font-size: 20px;
+  max-width: 100vw;
+  margin: 5vw;
+  color: burlywood;
+  background-color: #2f3033;
+
+  overflow: scroll;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair display', serif;
+  font-weight: 400;
+}
+
+h1 {
+  margin-top: 15px;
+  margin-bottom: -15px;
+
+}
+
+
+#download {
+  color: #d3531a;
+  text-decoration: none;
+}
+
+
+#download:hover {
+  color: white;
+  
+}
+
+
+#backButton {
+  font-size: 50px;
+  color: #d3531a;
+  text-decoration: none;
+      font-style: normal;
+}
+
+
+#backButton:hover {
+ color: white;
+}
+
+
+code.highlighter-rouge {
+  font-family: 'courier new', couriernew, courier, monospace;
+  font-weight: lighter;
+  background-color: black;
+  color: #f4f4f4;
+}
+
+/*for post interface header*/
+#header {
+  font-size: 40px;
+  margin-top: -5px;
+  font-size: 35px;
+}
+
+p {
+  font-family: 'Quicksand', serif;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 5px;
+
+}
+
+h2 {
+  font-size: 25px;
+  margin-top: 75px;
+}
+
+h4 {
+  font-size: 14px;
+  margin-top: -12px;
+}
+
+
+#profile {
+  margin-bottom: 2rem;
+  width: 550px;
+}
+
+#daturl {
+  width: 100px;
+}
+
+#watching {
+  height: 200px;
+}
+
+#watching li {
+  border-radius: 8px;
+}
+
+#watching ul li {
+  padding: 0.25rem;
+  padding-left: 0px;
+  margin: 0.25rem 0px 2rem 0px;
+  border-radius: 8px;
+  max-width: 300px;
+}
+
+#watching ul li p {
+  margin-bottom: 0.25rem;
+}
+
+.metadata {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-direction: center;
+  margin-top: 10px;
+  opacity: 0.2;
+}
+
+.tags {
+  display: inline-block;
+  /* color: blue; */
+  padding-right: 0.5rem;
+  border-radius: 5px;
+  /* background-color: #f1f1f1; */
+  font-size: 0.75rem;
+  /* width: 100%; */
+}
+
+.post-title {
+  opacity: 1;
+  font-weight: 500;
+}
+
+.post-time {
+  font-size: 0.75rem;
+  /* font-weight: 200; */
+}
+
+
+
+/******************************************************************************/ 
+/* colorWell textbox styling*/
+/***********************************************************************************/ 
+input[type="color" i] {
+  -webkit-appearance: button;
+  width: 75px;
+  height: 75px;
+  background-color: #F5F5F5;
+  cursor: default;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(169, 169, 169);
+  border-image: initial;
+  /* padding: 1px 2px; */
+  margin: -14px 0px 0px 7px;
+  display: unset;
+}
+
+
+
+#timestamp {
+  font-family: "quicksand", sans-serif;
+}
+
+
+#color-box {
+  background-color: #e6dfd3;
+  color: black;
+  height: 155px;
+  width: 111px;
+
+  padding-top: -30px;
+  padding-left: 10px;
+  border: 1px solid;
+  /* padding: 10px; */
+  box-shadow: 5px 10px 8px 0px black;
+
+  padding-bottom: 40px;
+  border-radius: 10px;
+}
+
+
+#wellText {
+  margin-top: -48px;
+  margin-left: 14px;
+  color: black;
+}
+
+label {
+  padding-top: -30px;
+}
+
+
+/************* /* color label in post* *************************/ 
+
+#hexColor {
+  background-color: black;
+  height: 40px;
+  width: 86px;
+  padding-left: 4px;
+  padding-top: 4px;
+  margin-bottom: 30px;
+  color: darkcyan;
+  border-radius: 7px;
+
+}
+
+
+/******************************************************************************/ 
+/*draft for adding another color*/
+/***********************************************************************************/ 
+#newColor {
+  /*margin-top: -90px;*/
+}
+
+/*input {
+    -moz-box-shadow: 0 0 1px 1px rgba(210,176,107,1);
+    -webkit-box-shadow: 0 0 1px 1px rgba(210,176,107,1);
+    box-shadow: 0 0 1px 1px rgba(210,176,107,1);
+    font-size: 2em;
+    
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    }*/
+
+
+    /******************************************************************************/ 
+    /* changes textbox/textarea*/
+    /***********************************************************************************/ 
+
+    input[type=text] {
+/*      -moz-box-shadow: 0 0 1px 1px rgba(210,176,107,1);
+    -webkit-box-shadow: 0 0 1px 1px rgba(210,176,107,1);
+    box-shadow: 0 0 1px 1px rgba(210,176,107,1);
+    */
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+
+    background-color: #e6dfd3;
+
+    border-radius: 10px;
+
+    width: 300px;
+    height: 50px;
+    font-size: 30px;
+    padding-left: 7px;
+
+  }
+
+  textarea {
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    font-size: 20px;
+    padding-left: 7px;
+    border-radius: 10px;
+    background-color: #e6dfd3;
+  }
+
+  textarea:focus {
+    -moz-box-shadow: 0 0 3px 1px darkcyan;
+    -webkit-box-shadow: 0 0 3px 1px darkcyan;
+    box-shadow: 0 0 3px 1px darkcyan;
+  }
+
+  input:focus {
+    -moz-box-shadow: 0 0 3px 1px darkcyan;
+    -webkit-box-shadow: 0 0 3px 1px darkcyan;
+    box-shadow: 0 0 3px 1px darkcyan;
+  }
+
+
+
+
+
+  hr {
+    color: white;
+  }
+
+  img {
+    max-width: 150px;
+  }
+
+
+
+
+  /******************************************************************************/ 
+  /*post interface*/
+  /***********************************************************************************/ 
+  #post_interface {
+    position: fixed;
+    right: 0px;
+    padding: 2rem;
+    top: 0px;
+    z-index: 0;
+    height: 100%;
+    background-color: black;
+
+    overflow: scroll;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  /******************************************************************************/ 
+  /* tooltip fix. Sticks all tooltip text to the div so that it follows the user when it moves*/
+  /***********************************************************************************/ 
+  .tooltip .tooltip2 {
+    position: fixed;
+  }
+
+
+  /******************************************************************************/ 
+  /*first tooltip for colorify info icon*/
+  /***********************************************************************************/ 
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    /*border-bottom: 1px dotted black;  If you want dots under the hoverable text */
+    margin-top: 6px;
+    font-size: 15px;
+    opacity: 1;
+    transition: opacity 300ms;
+
+    outline: none;
+
+  }
+
+  .tooltip:hover {
+    color: darkcyan;
+  }
+
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    bottom: 100%;
+    margin-bottom: 5px;
+    left: 50%;
+    margin-left: -60px;
+    background-color: grey;
+    color: #fff;
+    text-align: center;
+    /* padding: 5px 0; */
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    padding: 10px;
+    font-size: 16px;
+
+    font-family: "quicksand", sans-serif;
+
+    opacity: 0;
+    transition: opacity 300ms;
+  }
+
+  .tooltiptext {
+    transition: opacity 300ms;
+  }
+
+
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 300ms;
+  }
+
+
+
+  .tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: grey transparent transparent transparent;
+    opacity: 1;
+    transition: opacity 300ms;
+  }
+
+
+
+
+  /******************************************************************************/ 
+  /*2nd tooltip for hamburger*/
+  /***********************************************************************************/ 
+
+
+  /* Tooltip text */
+  .tooltip2 .tooltiptext2 {
+    visibility: hidden;
+    width: 120px;
+    bottom: 100%;
+    margin-bottom: 5px;
+    left: 50%;
+    margin-left: -60px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    /* padding: 5px 0; */
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    padding: 10px;
+    font-size: 16px;
+
+    opacity: 0;
+    transition: opacity 300ms;
+  }
+
+  .tooltiptext2 {
+    transition: opacity 300ms;
+  }
+
+
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip2:hover .tooltiptext2 {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 300ms;
+  }
+
+
+
+  .tooltip2 .tooltiptext2::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 100%; /* To the left of the tooltip */
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent black transparent transparent;
+    transition: opacity 300ms;
+  }
+
+
+
+  /******************************************************************************/ 
+  /* sidebar, contains install icon and hamburger*/
+  /***********************************************************************************/ 
+  #sidebar {
+    position: fixed;
+  }
+
+
+  /******************************************************************************/ 
+  /*install icon*/
+  /***********************************************************************************/ 
+  #install {
+    width: 47px;
+    /*position: fixed;*/
+    margin-left: -35px;
+  }
+
+
+  #install-icon {
+    margin-top: 80px;
+    font-size: 46px;
+    margin-left: -33px;
+
+  }
+
+  #install-icon:hover {
+    color: white;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+
+  a#symbol {
+    color: burlywood;
+    text-decoration: none;
+  }
+
+  #symbol:hover {
+    color: white;
+  }
+
+
+
+  /******************************************************************************/ 
+  /*3rd tooltip:; for install*/
+  /***********************************************************************************/ 
+
+  .tooltip3 .tooltiptext3 {
+    visibility: hidden;
+    width: 120px;
+    bottom: 100%;
+    margin-bottom: 5px;
+    left: 50%;
+    margin-left: -60px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    /* padding: 5px 0; */
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    padding: 10px;
+    font-size: 16px;
+
+    opacity: 0;
+    transition: opacity 300ms;
+  }
+
+  .tooltiptext3 {
+    transition: opacity 300ms;
+  }
+
+
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip3:hover .tooltiptext3 {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 300ms;
+  }
+
+
+
+  .tooltip3 .tooltiptext3::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 100%; /* To the left of the tooltip */
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent black transparent transparent;
+    transition: opacity 300ms;
+  }
+
+
+
+  /******************************************************************************/ 
+  /*submit button*/
+  /***********************************************************************************/ 
+
+  input[type="submit"] {
+    /*color: black;*/
+    background: white;
+    border: 3px solid black;
+    border-radius: 10px;
+
+    height: 50px;
+    width: 150px;
+    transition: 0.3s;
+    cursor: pointer;
+
+    box-sizing: border-box;
+    display: block;
+    letter-spacing: 1px;
+    padding: 4px;
+    position: relative;
+    text-transform: uppercase;
+    z-index: 2;
+    font-size: 15px;
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    outline: none;
+  }
+
+
+
+  input[type="submit"]:hover {
+    background: darkcyan;
+    color: white;
+    border: 3px solid #260f22;
+
+
+  }
+
+
+  /******************************************************************************/ 
+  /*forces down arrow to align*/
+  /***********************************************************************************/ 
+  #arrow {
+    font-size: 20px;
+    display: inline-block;
+    padding-top: 16px;
+  }
+
+
+  #up-arrow {
+    font-size: 20px;
+    display: inline-block;
+    padding-top: 16px;
+  }
+
+
+
+
+
+
+  #guideTitle {
+    font-size: 70px;
+    margin-top: -71px;
+
+  }
+
+  #color-guide {
+    font-size: 30px;
+    cursor: pointer;
+    margin-left: -35px;
+    /* right: 0; */
+    position: fixed;
+    /*z-index: 10;*/
+    top: 20px;
+
+  }
+
+
+  /******************************************************************************/ 
+  /*link hover colors in info menu*/
+  /***********************************************************************************/ 
+
+  .color-info {
+    width: 105%;
+  }
+
+  .color-info:hover {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400i;
+    font-style: italic;
+  }
+
+  #red-info:hover {
+    color: red;
+    background-color: #f3eee6;
+  }
+
+  #pink-info:hover {
+    color: pink;
+    background-color: #f3eee6;
+  }
+
+  #orange-info:hover {
+    color: orange;
+    background-color: #f3eee6;
+  }
+
+
+  #yellow-info:hover {
+    color: #ffeb3b;
+    background-color: #f3eee6;
+  }
+
+  #green-info:hover {
+    color: green;
+    background-color: #f3eee6;
+  }
+
+  #blue-info:hover {
+    color: blue;
+    background-color: #f3eee6;
+  }
+
+  #purple-info:hover {
+    color: purple;
+    background-color: #f3eee6;
+  }
+
+  #brown-info:hover {
+    color: brown;
+    background-color: #f3eee6;
+  }
+
+  #black-info:hover {
+    color: black;
+    background-color: #f3eee6;
+  }
+
+  #white-info:hover {
+    color: white;
+    background-color: darkgrey;
+  }
+
+  #undefined-info:hover {
+    color: white;
+    background-color: darkgrey;
+  }
+
+  /******************************************************************************/ 
+  /*col1*/
+  /***********************************************************************************/ 
+  #col1 {
+    margin-left: 125px;
+    margin-top: -169px;
+    width: 550px;
+    /*position: absolute;*/
+  }
+
+
+  /******************************************************************************/ 
+  /*hamburger*/
+  /***********************************************************************************/ 
+  #hamburger {
+    width: 50px;
+    height: 35px;
+    position: relative;
+    margin: 50px auto;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+
+    z-index: 990;
+
+    margin-left: -1px;
+  }
+
+  #hamburger span {
+    display: block;
+    position: absolute;
+    height: 9px;
+    width: 100%;
+    background: #d3531a;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+  }
+
+  #hamburger span:nth-child(1) {
+    top: 0px;
+  }
+
+  #hamburger span:nth-child(2),#hamburger span:nth-child(3) {
+    top: 18px;
+  }
+
+  #hamburger span:nth-child(4) {
+    top: 36px;
+  }
+
+
+
+
+
+
+  /******************************************************************************/ 
+  /*menu overlay*/
+  /***********************************************************************************/ 
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  .overlay-content {
+    position: relative;
+    top: 10%;
+    margin: auto;
+    width: 50%;
+    text-align: left;
+    margin-top: 30px;
+  }
+
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  /*globally changes all links to white*/
+  .overlay a:hover, .overlay a:focus {
+    color: white;
+  }
+
+
+
+  /*italicizes color title */
+  .overlay a:focus {  
+    font-style: italic;
+  }
+
+  .overlay .closebtn {
+    position: absolute;
+    top: 4px;
+    left: 25px;
+    font-size: 100px;
+    color: #d3531a;
+
+    -webkit-text-stroke: 2.5px;
+
+
+  }
+
+
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+
+
+
+
+
+  /******************************************************************************/ 
+  /*color description*/
+  /***********************************************************************************/ 
+
+  .description {
+    /*margin-bottom: 10px;*/
+    /*margin-left: 5px;*/
+    text-align: left;
+
+    font-family: "Quicksand", sans-serif;
+  }
+
+  /************** list in colors*******************************/ 
+
+
+  ul, li {
+    list-style: outside;
+    /* margin-left: 25px; */
+    font-size: 18px;
+    font-family: "Quicksand", sans-serif;
+    position: relative;
+    display: inline-block;
+  }
+
+
+li {
+   list-style-type: circle;
+}
+
+ul {
+  column-count: 3;
+      margin-top: -5px;
+}
+
+
+  ul#special {
+    margin-left: -35px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top: -5px;
+    display: flex;
+  }
+
+
+  #colorContainer {
+   float: left;
+   list-style: inline;
+   list-style-type: none;
+
+   font-family: "Quicksand", sans-serif;
+
+   width: 900px;
+
+   margin-bottom: 45px;
+ }
+
+ #hexColorLink {
+   font-size: 20px;
+   font-style: normal;
+ }
+
+ #colorList {
+
+   word-wrap: break-word;
+   list-style-type: none;
+   display: inline-block;
+ }
+
+ #hexColorLink:hover {
+  /*text-decoration: underline;*/
+  border-bottom: 2px solid white;
+  margin-top: -10px
+}
+
+#color-ref {
+  margin-top: 10px;
+}
+
+ul#special  > li {
+  display: inline-block;
+  /* You can also add some margins here to make it look prettier */
+  zoom:1;
+  *display:inline;
+  /* this fix is needed for IE7- */
+}
+
+
+
+#indent {
+  margin-left: 50px;
+}
+
+/******************************************************************************/ 
+/*selection*/
+/***********************************************************************************/ 
+::selection {
+  color: #09070e;
+  background: #fff;
+}

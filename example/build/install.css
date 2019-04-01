@@ -1,0 +1,85 @@
+.guide {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    background-color: grey;
+    width: 105%;
+}
+
+.guide:hover {
+    color: black;
+    background-color: #f3eee6;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400i;
+    font-style: italic;
+}
+
+/*FAQ header*/
+.guide {
+    color: white;
+    background-color: grey;
+    width: 105%;
+    padding: 5px;
+    border-bottom: 6px solid white;
+}
+
+.guide:hover {
+    color: burlywood;
+    background-color: black;
+}
+
+#questions {
+    color: burlywood;
+    background-color: black;
+    padding: 15px;
+    display: none;
+
+    border-bottom: 3px solid grey;
+    width: 85%;
+}
+
+#benefits:hover  {
+    font-style: italic;
+    color: burlywood;
+    transition: 300ms;
+}
+
+ #arrowFAQ:hover {
+  font-style: italic;
+ }
+
+/*text*/
+.ref {
+    color: white;
+    font-size: 26px;
+    margin-bottom: 10px;
+
+}
+
+
+#answers {
+    display: none;
+        border-top: 1px solid burlywood;
+        margin-top: 5px;
+}
+
+#description {
+    font-size: 20px;
+            margin-top: 5px;
+            font-style: normal;
+}
+
+li {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: darkgrey;
+    display: block;
+}
+
+
+a:hover {
+    color: white;
+}
