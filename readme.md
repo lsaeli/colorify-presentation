@@ -6,6 +6,9 @@ See folder definitions below.
 ### JS-assets
 Holds all the template information. Implement into your site.
 
+colorify.js=javascript pulled from the boilerplate's index
+colorify-network-interfacing.js= javascript from network interfacing
+
 
 ### Presentation
-Download this folder to see Colorify in situ.
+Download the example folder to see Colorify in situ.
